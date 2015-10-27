@@ -8,4 +8,5 @@ RUN tar zxvf apache-tomcat-7.0.63.tar.gz
 ENV TOMCAT_HOME /apache-tomcat-7.0.63
 ENV CATALINA_HOME /apache-tomcat-7.0.63
 CMD $CATALINA_HOME/bin/catalina.sh run
+VOLUME ['/var/log', '/tmp', '/mnt']
 EXPOSE 8080
